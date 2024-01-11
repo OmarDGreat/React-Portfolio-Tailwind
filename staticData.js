@@ -9,7 +9,7 @@ const intros = [
   },
 ];
 
-const about = [
+const abouts = [
   {
     lottieUrl:
       "https://lottie.host/ddebcb98-b350-4150-b18e-cbfa99df721b/TygrBP53tW.json",

@@ -127,11 +127,10 @@ const contactSchema = new mongoose.Schema({
 });
 
 module.exports = {
-    Intro : mongoose.model("Intros", introSchema),
-    About : mongoose.model("about", aboutSchema),
-    Experience : mongoose.model("Experience", experienceSchema),
-    Projects : mongoose.model("Projects", projectSchema),
-    Education : mongoose.model("Education", educationSchema),
-    Contact : mongoose.model("Contact", contactSchema),
-
+  Intro : mongoose.model("intros", introSchema),
+  About : mongoose.model("abouts", aboutSchema),
+  Experience : mongoose.model("experiences", experienceSchema),
+  Project : mongoose.model("projects", projectSchema),
+  Education : mongoose.model("educations", educationSchema),
+  Contact : mongoose.model("contacts", contactSchema),
 }
