@@ -1,8 +1,8 @@
-const router = require('express').Router();
+const router = require("express").Router();
 const {
   Intro,
   About,
-  Project,
+  Projects,
   Contact,
   Experience,
   Education,
@@ -12,8 +12,6 @@ router.get("/get-portfolio-data", async (req, res) => {
   try {
     const intros = await Intro.find();
     const abouts = await About.find();
-    const projects = await Project.find();
-    const contacts = await Contact.find();
     const experiences = await Experience.find();
     const educations = await Education.find();
 
@@ -22,7 +20,7 @@ router.get("/get-portfolio-data", async (req, res) => {
       about: abouts[0],
       projects: projects,
       contact: contacts[0],
-      experience: experiences,
+      experiences: experiences,
       education: educations,
     });
   } catch (error) {
